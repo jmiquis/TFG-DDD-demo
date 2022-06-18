@@ -15,13 +15,13 @@ It is an incidences manager app wich notifies the assigned worker by mail.
 - Esta app (INCOMPLETA) se utilizó en una demo dentro de un trabajo teórico sobre Domain Driven Design, arquitectura heagonal y CQRS en Java,para el TFG de un grado superior DAW, usando los frameworks Spring Boot y Axon.
 La aplicación está basada en los ejemplos de https://github.com/CodelyTV/java-ddd-skeleton y los cursos de su plataforma. Os recomiendo que le echeís un vistazo porque merecen la pena.
 
-
+### 1. create image axonserver
 
 ### To download/run axonserver image: 
 	 docker run -d --name axonserver -p 8024:8024 -p 8124:8124 axoniq/axonserver
 	 docker start axonserver
-### create database incidences_manager
-### clone this app and make http requests
+### 2 create database incidences_manager
+### 3 clone this app and make http requests
 
 ### In order to notify when an incidence is assigned you should to add your google app progrmatic password and your gmail account
 

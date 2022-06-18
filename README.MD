@@ -36,8 +36,8 @@ La aplicación está basada en los ejemplos de https://github.com/CodelyTV/java-
 #emailSender
 - spring.mail.host=smtp.gmail.com
 - spring.mail.port=587
-- spring.mail.username=your gmail account here
-- spring.mail.password=programatic app access password from google
+- spring.mail.username=your gmail account here 😎
+- spring.mail.password=programatic app access password from google 😎
 - spring.mail.properties.mail.smtp.auth=true
 - spring.mail.properties.mail.smtp.starttls.enable=true
 

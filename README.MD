@@ -20,7 +20,7 @@ La aplicación está basada en los ejemplos de https://github.com/CodelyTV/java-
 ### To download/run axonserver image: 
 	 docker run -d --name axonserver -p 8024:8024 -p 8124:8124 axoniq/axonserver
 	 docker start axonserver
-### run the database script
+### create database incidences_manager
 ### clone this app and make http requests
 
 ### In order to notify when an incidence is assigned you should to add your google app progrmatic password and your gmail account

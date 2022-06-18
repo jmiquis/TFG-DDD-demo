@@ -79,5 +79,5 @@ target/*
 secrets.yml
 .gradletasknamecache
 .sts4-cache
-docker-compse.yml
+docker-compose.yml
 Dockerfile

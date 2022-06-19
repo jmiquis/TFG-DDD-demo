@@ -16,8 +16,6 @@ It is an incidences manager app wich notifies the assigned worker by mail.
 La aplicación está basada en los ejemplos de https://github.com/CodelyTV/java-ddd-skeleton y los cursos de su plataforma. Os recomiendo que le echeís un vistazo porque merecen la pena.
 
 ### 1. create image axonserver
-
-### To download/run axonserver image: 
 	 docker run -d --name axonserver -p 8024:8024 -p 8124:8124 axoniq/axonserver
 	 docker start axonserver
 ### 2 create database incidences_manager

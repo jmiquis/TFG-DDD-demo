@@ -17,12 +17,11 @@ La aplicación está basada en los ejemplos de https://github.com/CodelyTV/java-
 - Postman for http requests [optional] 📯
 
 ### Steps 🐾
-
-- create image axonserver
-
-- docker run -d --name axonserver -p 8024:8024 -p 8124:8124 axoniq/axonserver 🐳
-- docker start axonserver 🐋
-- create database incidences_manager 🏪
-- clone this app and make http requests 📯
+``
+git clone this app and make http requests https://github.com/jmiquis/TFG-DDD-demo.git
+docker run -d --name axonserver -p 8024:8024 -p 8124:8124 axoniq/axonserver 🐳
+docker start axonserver 🐋
+create database incidences_manager 🏪
+``
 
 ### In order to notify when an incidence is assigned you should to add your google app programatic password and your gmail account to application.properties

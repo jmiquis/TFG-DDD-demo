@@ -23,4 +23,4 @@ La aplicación está basada en los ejemplos de https://github.com/CodelyTV/java-
 - create database incidences_manager
 - clone this app and make http requests
 
-### In order to notify when an incidence is assigned you should to add your google app progrmatic password and your gmail account
+### In order to notify when an incidence is assigned you should to add your google app programatic password and your gmail account to application.properties

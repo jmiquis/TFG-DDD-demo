@@ -24,23 +24,3 @@ La aplicación está basada en los ejemplos de https://github.com/CodelyTV/java-
 - clone this app and make http requests
 
 ### In order to notify when an incidence is assigned you should to add your google app progrmatic password and your gmail account
-
-#### application.properties
-- spring.jpa.hibernate.ddl-auto=update
-- spring.datasource.url=jdbc:mysql://localhost:3306/incidence_manager?serverTimezone=UTC
-- spring.datasource.username=root
-- spring.datasource.password=root
-- spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
-- spring.jpa.show-sql: true
-
-#emailSender
-- spring.mail.host=smtp.gmail.com
-- spring.mail.port=587
-- spring.mail.username=your gmail account here 😎
-- spring.mail.password=programatic app access password from google 😎
-- spring.mail.properties.mail.smtp.auth=true
-- spring.mail.properties.mail.smtp.starttls.enable=true
-
-#Axon
-- axon.eventhandling.processors.name.mode=subscribing
-- axon.eventhandling.processors.name.source=eventBus

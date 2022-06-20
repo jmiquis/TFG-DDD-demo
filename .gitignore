@@ -74,7 +74,6 @@ manifest.yml
 out
 overridedb.*
 target/*
-!target/spring-boot-docker.jar
 .flattened-pom.xml
 secrets.yml
 .gradletasknamecache

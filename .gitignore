@@ -81,3 +81,4 @@ secrets.yml
 .sts4-cache
 Dockerfile
 .env
+Docker-compose.yml

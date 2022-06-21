@@ -11,6 +11,7 @@
 	<groupId>com.prueba</groupId>
 	<artifactId>DDD-API</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
 	<name>DDD-API</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
@@ -80,26 +81,30 @@
 		    <artifactId>axon-spring-boot-starter</artifactId>
 		    <version>4.5.9</version>
 		</dependency>
-      
 	</dependencies>
 		
 
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-				<configuration>
-					<excludes>
-						<exclude>
-							<groupId>org.projectlombok</groupId>
-							<artifactId>lombok</artifactId>
-						</exclude>
-					</excludes>
-				</configuration>
-			</plugin>
-		</plugins>
-		<finalName>spring-boot-docker</finalName>
-	</build>
+		<build>
+			<plugins>
+				 <plugin>
+			    <groupId>com.jolira</groupId>
+			    <artifactId>onejar-maven-plugin</artifactId>
+			    <executions>
+			        <execution>
+			            <configuration>
+			                <mainClass>com.Main</mainClass>
+			                <attachToBuild>true</attachToBuild>
+			                <filename>
+			                  ${project.build.finalName}.${project.packaging}
+			                </filename>
+			            </configuration>
+			            <goals>
+			                <goal>one-jar</goal>
+			            </goals>
+			        </execution>
+			    </executions>
+				</plugin>
+			</plugins>
+		</build>
 
 </project>

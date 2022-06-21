@@ -37,7 +37,17 @@ public abstract class StringValueObject implements Serializable{
 			throw new IllegalArgumentException("The value "+value+" is an invalid one");
 		}	
 	}
-    
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (!(o instanceof StringValueObject)) {
+            return false;
+        }
+        StringValueObject that = (StringValueObject) o;
+        return Objects.equals(value, that.value);
+    }
    
     
     

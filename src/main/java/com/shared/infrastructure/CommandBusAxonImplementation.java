@@ -10,11 +10,10 @@ import com.shared.domain.CommandBus;
 @Service
 public class CommandBusAxonImplementation implements CommandBus{
 
-	private org.axonframework.commandhandling.CommandBus commandBus;
+	
 	private CommandGateway commandGateWay;
 	
-	public CommandBusAxonImplementation(org.axonframework.commandhandling.CommandBus commandBus,CommandGateway commandGateWay) {
-		this.commandBus=commandBus;
+	public CommandBusAxonImplementation(CommandGateway commandGateWay) {
 		this.commandGateWay=commandGateWay;
 	}
 	
